@@ -1,6 +1,7 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class RemoveDuplicateFromArray {
 	public static void main(String[] args) {
@@ -27,8 +28,18 @@ public class RemoveDuplicateFromArray {
 			}
 
 		}
+
+		int[] resultAsArray = IntStream.range(0, arr.length)
+				.filter(i -> i == 0 || arr[i] != arr[i - 1])
+				.map(i -> arr[i])
+				.toArray();
+
 		System.out.println(" number of elements moved :" + count);
+
+		// return resultAsArray;
+
 		return arr;
+
 	}
 
 }
