@@ -14,7 +14,7 @@ public class MaxNumInRightSideOfArray {
 		 */
 
 		int[] nums = { 2, 3, 5, 1, 4 };
-		System.out.println("result :" + getMaxNumberRightSideOfTheArray(nums).toString());
+		System.out.println("result :" + getMaxNumberRightSideOfTheArray(nums));
 	}
 
 	private static List<Integer> getMaxNumberRightSideOfTheArray(int[] nums) {
