@@ -1,6 +1,6 @@
 package leetcode;
 
-class ReverseLinkedList {
+public class ReverseLinkedList {
 
 	public static void main(String[] args) {
 		Node head = new Node(5);
