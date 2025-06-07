@@ -6,6 +6,8 @@ import java.util.Map;
 public class MajorityElement {
 
 	/*
+	 * problem no : 169
+	 * 
 	 * Input: nums = [3,2,3] Output: 3
 	 * 
 	 * Input: nums = [2,2,1,1,1,2,2] Output: 2

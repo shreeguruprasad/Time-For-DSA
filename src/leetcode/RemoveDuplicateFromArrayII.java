@@ -7,6 +7,7 @@ public class RemoveDuplicateFromArrayII {
 	public static void main(String[] args) {
 		
 		/*
+		 * problem no : 80
 		 * 
 		 * Input: nums = [1,1,1,2,2,3]
 		 * Output: 5, nums = [1,1,2,2,3,_]

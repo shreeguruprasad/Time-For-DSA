@@ -6,6 +6,7 @@ public class ReplaceElementsWithGreatestElementOnRightSide {
 
 	public static void main(String[] args) {
 		/*
+		 * problem no : 1299
 		 * 
 		 * Input: arr = [17,18,5,4,6,1] Output: [18,6,6,6,1,-1]
 		 * 

@@ -7,6 +7,7 @@ public class MaxNumInRightSideOfArray {
 
 	public static void main(String[] args) {
 		/*
+		 * #Lowes_interview_question
 		 * 
 		 * Input: nums = [2,3,5,1,4] Output: [5,4]
 		 * 
