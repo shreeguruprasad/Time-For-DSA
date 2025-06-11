@@ -23,20 +23,20 @@ public class ProductofArrayExceptSelf {
 	}
 
 	private static void multipler(int[] nums) {
-		int[] result = new int[nums.length];
-		for (int i = 0; i < nums.length; i++) {
-			int product = 1;
-			System.out.println(nums[i]);
-			for (int j = 0; j < nums.length; j++) {
-				if (j != i) {
-					product = product * nums[j];
-				}
-
-			}
-			result[i] = product;
+		int n = nums.length;
+		int[] ans = new int[n];
+		int left = 1;
+		for (int i = 0; i < n; i++) {
+			ans[i] = left;
+			left *= nums[i];
 		}
-		System.out.println(Arrays.toString(result));
+		int rigth = 1;
+		for (int i = n - 1; i >= 0; i--) {
+			ans[i] *= rigth;
+			rigth *= nums[i];
 
+		}
+		System.out.println(Arrays.toString(ans));
 	}
 
 }
