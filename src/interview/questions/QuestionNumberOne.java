@@ -11,7 +11,8 @@ public class QuestionNumberOne {
 		 * 
 		 * Laerdal Medical : 1st Technical Round
 		 * 
-		 * Input : str = "Java Is Great Programming Language" output: javisgretpomnlu
+		 * Input : str = "Java Is Great Programming Language" 
+		 * output: javisgretpomnlu
 		 * Explaination : remove the duplicate character using java 8
 		 * 
 		 */
