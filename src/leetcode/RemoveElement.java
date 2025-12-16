@@ -24,6 +24,13 @@ public class RemoveElement {
 		int val2 = 3;
 
 		System.out.println(elementRemover((input2), val2));
+		
+		int[] input3 = {0, 1, 2, 2, 3, 0, 4, 2};
+		System.out.println(" Second time  :  "+secondElementRemover((input3), val2));
+		
+		int[] input4 = {0, 1, 2, 3, 3, 3, 4, 2};
+		System.out.println(" Second time  :  "+secondElementRemover((input4), val2));
+		
 
 	}
 
@@ -38,5 +45,15 @@ public class RemoveElement {
 		System.out.println(inputList);
 		return count;
 	}
-
+	
+	private static int secondElementRemover(int[] array, int value) {
+		int count = 0;
+		for(int i=0;i<array.length;i++) {
+			if(array[i] != value) {
+				array[count] = array[i];
+				count++;
+			}
+		}
+		return count;
+	}
 }
