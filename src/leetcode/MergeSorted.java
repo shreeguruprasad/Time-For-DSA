@@ -35,6 +35,25 @@ public class MergeSorted {
 
 		System.out.println(Arrays.toString(nums1));
 
+		int[] n1 = { 2, 3, 6, 0, 0, 0 };
+		int[] n2 = { 3, 5, 8 };
+		int x = 3;
+		int y = 3;
+		
+		System.out.print("1st array -> "+Arrays.toString(n1) + " 2nd array -> "+Arrays.toString(n2));
+
+		int totalArrayLength = x + y - 1;
+		int r = x - 1;
+		int l = y - 1;
+
+		while (l >= 0) {
+			if (r - 1 > 0 && n1[r] > n2[l]) {
+				n1[totalArrayLength--] = n1[r--];
+			}else {
+				n1[totalArrayLength--] = n2[l--];
+			}
+		}
+		System.out.println("   ***  merged array  *** ==>> "+Arrays.toString(n1));
 	}
 
 }
